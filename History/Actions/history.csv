@@ -1,0 +1,22 @@
+
+list.csv,FindDuplicate,DU=144 / TD=367,Duplicate,2025-02-22 12:55:54
+list.csv,FindDuplicate,DU=144 / TD=367,Duplicate,2025-02-22 12:57:18
+list.csv,DELETE,D=367,Filtred,2025-02-22 12:59:23
+List2.csv,FindDuplicate,DU=0 / TD=0,Duplicate,2025-02-22 13:00:38
+List2.csv,FindDuplicate,DU=3 / TD=6,Duplicate,2025-02-22 13:03:03
+List2.csv & List.csv,FindSimilaire,Nombre d'emails similaires : 269,Duplicate,2025-02-22 13:27:18
+List2Du.csv,FindDuplicate,DU=0 / TD=0,Duplicate,2025-02-22 13:29:31
+List2.csv & list.csv,FindSimilaire,S=  : 269 ,Duplicate,2025-02-22 13:45:23
+List2.csv,DELETE,D=269,Filtred,2025-02-22 13:45:50
+Test.csv,FindDuplicate,DU=144 / TD=367,Duplicate,2025-02-22 14:28:38
+Test.csv & List2.csv,FindSimilaire,S=  : 269,Duplicate,2025-02-22 14:29:58
+Test.csv,DELETE,D=367,Filtred,2025-02-22 14:30:14
+Test2.csv & list.csv,FindSimilaire,S=  : 269,Duplicate,2025-02-22 14:33:20
+Test2.csv,FindDuplicate,DU=3 / TD=6,Duplicate,2025-02-22 14:37:12
+Test2.csv & list.csv,FindSimilaire,S=  : 269,Duplicate,2025-02-22 14:37:31
+Test2.csv,DELETE,D=6,Filtred,2025-02-22 14:37:37
+Test2.csv,FindDuplicate,DU=3 / TD=6,Duplicate,2025-02-22 14:42:50
+Test2.csv & list.csv,FindSimilaire,S=  : 269,Duplicate,2025-02-22 14:43:01
+Test2.csv,FindDuplicate,DU=3 / TD=6,Duplicate,2025-02-22 14:49:02
+Test2.csv & list.csv,FindSimilaire,S=  : 269,Duplicate,2025-02-22 14:49:11
+Test2.csv,DELETE,D=275,Filtred,2025-02-22 14:49:23
