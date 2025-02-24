@@ -1,17 +1,18 @@
 import csv
 from io import StringIO
 
-def format_emails_to_csv(input_text):
-    # Split the input text into lines
-    lines = input_text.split('\n')
+def format_emails_to_csv(file_path):
+    # Lire le contenu du fichier
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
     
     # Process the lines
     emails = []
     for line in lines:
         line = line.strip()
         if line:
-            # Remove quotation marks if present
-            email = line.strip('"')
+            # Extraire l'email de la ligne
+            email = line.split(':')[0].strip()
             emails.append(email)
     
     # Remove duplicates while preserving order
@@ -25,56 +26,13 @@ def format_emails_to_csv(input_text):
     
     return output.getvalue()
 
-# Example usage
-input_text = '''
-"test1@testsendblaster.com"
-"test2@testsendblaster.com"
-"mohameds.boufanzi@gmail.com"
-"michelnersisyan@gmail.com"
-"accompagnement.0524@gmail.com"
-"archiprime01@gmail.com"
-"youkamdigital@gmail.com"
-"responsablerh5@gmail.com"
-"bad4i5alid@gmail.com"
-"milet1id@gmail.com"
-"ali@syndic24.ma"
-"rh.epcconline@gmail.com"
-"nassimtriki01@gmail.com"
-"rh@lgmc-mutandis.com"
-"moxecccfd2022@gmail.com"
-"erasmusplus@uae.ac.ma"
-"imaginette22@gmail.com"
-"josephineyolande.immo@gmail.com"
-"recrutementurgent012019@gmail.com"
-"hanaa@sendatrack.com"
-"el.mehdi.sekkouri.alaoui@oracle.com"
-"swiqat.ayoub@gmail.com"
-"prod.images30@gmail.com"
-"recrutement.nextacademy@gmail.com"
-"fiscafisca2014@gmail.com"
-"sce.recherche.cooperation@encgt.ma"
-"kotorisan97@gmail.com"
-"s.mamane@epc-projects-maroc.com"
-"consultddss@gmail.com"
-"contact.youzinsarl@gmail.com"
-"corintosarl@gmail.com"
-"cooperation@encgt.ma"
-"tanger@masertech.ma"
-"pharmatng80@gmail.com"
-"gtec.info01@gmail.com"
-"dalila.kamardine@efrei.net"
-"escientifiques@gmail.com"
-"torecandidature@gmail.com"
-"garecrut@gmail.com"
-"recrutement@continuum.ma"
-"younesyassine5002@gmail.com"
-"contact@atarec.com"
-"jdaguerrej@gmail.com"
-"jojoux0@gmail.com"
-"economie.authentique@gmail.com"
-"restoconcept73@gmail.com"
-"asmaeelhaddouchi06@gmail.com"
-'''
-
-csv_output = format_emails_to_csv(input_text)
+# Exemple d'utilisation
+file_name = input(" File name ? : ")
+file_path = f'C:/Users/Abdo/projects/templates/Filter/{file_name}.txt'
+csv_output = format_emails_to_csv(file_path)
 print(csv_output)
+
+# Enregistrer le résultat dans un fichier CSV
+output_csv_path = f'C:/Users/Abdo/projects/templates/Filter/{file_name}.csv'
+with open(output_csv_path, 'w', newline='') as csvfile:
+    csvfile.write(csv_output)

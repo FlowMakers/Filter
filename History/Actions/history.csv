@@ -20,3 +20,7 @@ Test2.csv & list.csv,FindSimilaire,S=  : 269,Duplicate,2025-02-22 14:43:01
 Test2.csv,FindDuplicate,DU=3 / TD=6,Duplicate,2025-02-22 14:49:02
 Test2.csv & list.csv,FindSimilaire,S=  : 269,Duplicate,2025-02-22 14:49:11
 Test2.csv,DELETE,D=275,Filtred,2025-02-22 14:49:23
+List3.csv,DELETE,D=112,Filtred,2025-02-24 01:10:39
+List3.csv,DELETE,D=167,Filtred,2025-02-24 01:24:27
+List3.csv,DELETE,D=0,Filtred,2025-02-24 01:33:34
+List3.csv,DELETE,D=26,Filtred,2025-02-24 01:34:43
